@@ -5,9 +5,9 @@
   "version": "1.0.1",
   "description": "This is a demo for a tab extension",
   "icons": {
-    "src": "favicon.ico",
-    "sizes": "64x64 32x32 24x24 16x16",
-    "type": "image/x-icon"
+    "16": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
