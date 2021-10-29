@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Browser Extension Demo",
-  "author": "Hu Chen",
+  "author": "me",
   "version": "1.0.1",
   "description": "This is a demo for a tab extension",
   "icons": {
