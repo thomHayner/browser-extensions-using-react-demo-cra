@@ -1,3 +1,4 @@
+/*global chrome*/
 import react from "react";
 
 
