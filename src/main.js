@@ -16,8 +16,28 @@ const Main = () => {
         }}>
         Chrome Tab
       </button>
+      <button
+        onClick={() => {
+          fetchData(inputs)
+        }}>
+        Fetch
+      </button>
     </div>
   )
 } 
 
 export default Main
+
+const fetchData=(inputs)=>{
+  fetch('https://example.com/api', {
+      method: 'post',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(inputs)
+    })
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      ChromeSamples.log(data.whatever);
+    });
+  }
