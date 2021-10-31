@@ -19,8 +19,6 @@ function Main() {
 
   return aPOD? (
     <div>
-      <h1>Hello Browser Extension World!</h1>
-      
       <img src={aPOD.hdurl} alt="Astronomy Picture of the Day" />
     </div>
   ) :
