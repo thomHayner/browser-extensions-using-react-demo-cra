@@ -32,8 +32,11 @@ WORKING + with a popup when you click on the icon:
   Mobile style design looks like a good fit for designing the popup, UX/UI areas and space available are similar in size.
 
 
-Chrome Extensions Tab keeps displaying an error:
+~~Chrome Extensions Tab keeps displaying an error:
 
   `Manifest: property 'icons' ignored, type array expected.`
   When I changed the value of the 'icons' key to an array in the manifest.json file I was no longer able to 'Load unpacked' build/extension in chrome,
-  however, if I use an object instead of an array I get the above error in the Chrome://extensions tab.
+  however, if I use an object instead of an array I get the above error in the Chrome://extensions tab.~~  
+  Fixed This Error
+
+Log 003:
