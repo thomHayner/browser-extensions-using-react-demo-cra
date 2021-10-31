@@ -30,6 +30,7 @@ function Main() {
         }}>
         Chrome Tab
       </button>
+      <img src={aPOD.hdurl} alt="Astronomy Picture of the Day" />
     </div>
   ) :
   (
