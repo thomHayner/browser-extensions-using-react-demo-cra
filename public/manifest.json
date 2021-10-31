@@ -4,6 +4,10 @@
   "author": "me",
   "version": "1.0.1",
   "description": "This is a demo for a tab extension",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
   "icons": {
     "16": "logo192.png",
     "48": "logo192.png",
