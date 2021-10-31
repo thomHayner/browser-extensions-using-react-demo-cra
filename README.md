@@ -26,7 +26,7 @@ Browser extension is WORKING, does not do very much functionally, but it does di
 
 Log 002:
 
-WORKING + with a popup when you click on the icon.
+WORKING + with a popup when you click on the icon:
 
   Currently it just displays the same thing in a little popup window.
   Mobile style design looks like a good fit for designing the popup, UX/UI areas and space available are similar in size.
