@@ -6,7 +6,8 @@ function Main() {
   const [aPOD, setAPOD] = useState({});
 
   useEffect(()=>{
-    fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', {})
+    const API_KEY = `DEMO_KEY`;
+    fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`, {})
       .then((res)=>res.json())
       .then((data)=> {
         console.log(data)
@@ -22,7 +23,7 @@ function Main() {
       <div>
       </div>
       <div style={{ "display": "flex", "justifyContent": "space-around"}}>
-        <img src={aPOD.hdurl} alt="NASA's Astronomy Picture of the Day"  />
+        <img src={aPOD.hdurl} alt="NASA's Astronomy Pic of the Day" />
         <div>
           <h2>NASA's Astronomy Picture of the Day for {aPOD.date}</h2>
           <h3>{aPOD.title}</h3>
