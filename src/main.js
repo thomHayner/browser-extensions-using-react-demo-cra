@@ -18,10 +18,16 @@ function Main() {
   }, []);
 
   return aPOD? (
-    <div style={{ "display": "flex", "justifyContent": "space-around"}}>
-      <img src={aPOD.hdurl} alt="NASA's Astronomy Picture of the Day"  />
+    <div>
       <div>
-        <p>{aPOD.explanation}</p>
+      </div>
+      <div style={{ "display": "flex", "justifyContent": "space-around"}}>
+        <img src={aPOD.hdurl} alt="NASA's Astronomy Picture of the Day"  />
+        <div>
+          <h2>NASA's Astronomy Picture of the Day for {aPOD.date}</h2>
+          <h3>{aPOD.title}</h3>
+          <p>{aPOD.explanation}</p>
+        </div>
       </div>
     </div>
   ) : (
