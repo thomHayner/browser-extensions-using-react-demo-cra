@@ -10,3 +10,6 @@ https://levelup.gitconnected.com/how-to-use-react-js-to-create-chrome-extension-
 
 Additional references:
 
+https://blog.logrocket.com/creating-chrome-extension-react-typescript/
+https://developer.chrome.com/docs/extensions/reference/tabs/
+https://developer.chrome.com/docs/extensions/reference/action/
