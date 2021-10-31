@@ -7,7 +7,7 @@ function Main() {
 
   useEffect(()=>{
     fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', {})
-      .then((response)=>response.json())
+      .then((res)=>res.json())
       .then((data)=> {
         console.log(data)
         setAPOD(data)
@@ -39,3 +39,9 @@ function Main() {
 } 
 
 export default Main
+
+// const styles = {
+//   div: {
+//     backgroundImage: `${address}`
+//   }
+// }
