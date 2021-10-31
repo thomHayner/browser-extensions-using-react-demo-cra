@@ -18,8 +18,11 @@ function Main() {
   }, []);
 
   return aPOD? (
-    <div>
-      <img src={aPOD.hdurl} alt="NASA's Astronomy Picture of the Day" style={{ "width": "100vw", "height": "100vh" }} />
+    <div style={{ "display": "flex", "justifyContent": "space-around"}}>
+      <img src={aPOD.hdurl} alt="NASA's Astronomy Picture of the Day"  />
+      <div>
+        <p>{aPOD.explanation}</p>
+      </div>
     </div>
   ) : (
     <div>
@@ -38,3 +41,6 @@ function Main() {
 } 
 
 export default Main
+
+
+// style={{ "width": "100vw", "height": "100vh", "overflow": "hidden" }}
