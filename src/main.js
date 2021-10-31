@@ -3,14 +3,16 @@ import React, { useState, useEffect } from "react";
 
 
 function Main() {
-  const [aPOD, setAPOD] = useState(null)
+  const [aPOD, setAPOD] = useState(null);
+  // let address = '';
 
   useEffect(()=>{
-    fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', {})
+    fetch('https://api.nasa.gov/planetary/apod?api_key=twnmUtKcbPwIZPuP0U8ROkNdQN5S8BFXO6bbwcif', {})
       .then((res)=>res.json())
       .then((data)=> {
         console.log(data)
         setAPOD(data)
+        // address = aPOD ? aPOD.hdurl ? `url(${aPOD.hdurl})` : aPOD.url ? `url(${aPOD.url})` : '' : '';
       })
       .catch((error)=>{
         console.log(error)
@@ -19,6 +21,7 @@ function Main() {
 
   return aPOD? (
     <div>
+      {/* <div style={{ "backgroundImage": `url(${address})` }}/> */}
       <img src={aPOD.hdurl} alt="Astronomy Picture of the Day" />
     </div>
   ) :
