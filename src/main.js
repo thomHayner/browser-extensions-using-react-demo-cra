@@ -3,16 +3,14 @@ import React, { useState, useEffect } from "react";
 
 
 function Main() {
-  const [aPOD, setAPOD] = useState(null);
-  // let address = '';
+  const [aPOD, setAPOD] = useState({});
 
   useEffect(()=>{
-    fetch('https://api.nasa.gov/planetary/apod?api_key=twnmUtKcbPwIZPuP0U8ROkNdQN5S8BFXO6bbwcif', {})
+    fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', {})
       .then((res)=>res.json())
       .then((data)=> {
         console.log(data)
         setAPOD(data)
-        // address = aPOD ? aPOD.hdurl ? `url(${aPOD.hdurl})` : aPOD.url ? `url(${aPOD.url})` : '' : '';
       })
       .catch((error)=>{
         console.log(error)
@@ -21,11 +19,9 @@ function Main() {
 
   return aPOD? (
     <div>
-      {/* <div style={{ "backgroundImage": `url(${address})` }}/> */}
-      <img src={aPOD.hdurl} alt="Astronomy Picture of the Day" />
+      <img src={aPOD.hdurl} alt="NASA's Astronomy Picture of the Day" style={{ "width": "100vw", "height": "100vh" }} />
     </div>
-  ) :
-  (
+  ) : (
     <div>
       <button
         onClick={() => {
@@ -37,14 +33,8 @@ function Main() {
         }}>
         Chrome Tab
       </button>
-  </div>
+    </div>
   )
 } 
 
 export default Main
-
-// const styles = {
-//   div: {
-//     backgroundImage: `${address}`
-//   }
-// }
