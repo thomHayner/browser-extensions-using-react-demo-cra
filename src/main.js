@@ -23,7 +23,7 @@ function Main() {
       <div>
       </div>
       <div style={{ "display": "flex", "justifyContent": "space-around"}}>
-        <img src={aPOD.hdurl} alt="NASA's Astronomy Pic of the Day" />
+        <img src={aPOD.hdurl} alt="NASA's Astronomy Pic of the Day" style={{ "maxWidth": "80vw", "maxHeight": "100vh" }} />
         <div>
           <h2>NASA's Astronomy Picture of the Day for {aPOD.date}</h2>
           <h3>{aPOD.title}</h3>
@@ -48,6 +48,3 @@ function Main() {
 } 
 
 export default Main
-
-
-// style={{ "width": "100vw", "height": "100vh", "overflow": "hidden" }}
